@@ -19,4 +19,4 @@ jasminenmcbride3@gmail.com
 
 ---
 
-*Built with love and purple energy 💜*
+*Built with love and positive energy 💜*
