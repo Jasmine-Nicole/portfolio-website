@@ -18,7 +18,18 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
-const words = ["Software Engineer", "Web Developer", "Creative Thinker", "Student"];
+const words = [
+  "Aspiring Software Engineer & Web Developer",
+  "CodePath Student",
+  "Forever Learning",
+  "Creative Thinker",
+  "Minimalist Coder",
+  "Green-Loving Developer 🌿",
+  "Empathy-First Problem Solver",
+  "Frontend Explorer",
+  "Curious & Capable",
+  "Building with Heart 💚"
+];
 let i = 0;
 let j = 0;
 let currentWord = '';

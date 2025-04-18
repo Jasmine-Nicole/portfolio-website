@@ -40,7 +40,9 @@ nav a {
 section {
     padding: 20px;
 }
-
+#contact {
+    padding-bottom: 120px;
+}
 footer {
     background-color: var(--highlight-color);
     color: var(--primary-color);
@@ -49,4 +51,38 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 100;
 }
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#typewriter {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #2e7d32; /* soft elegant green */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #2e7d32;
+    animation: blink-caret 0.75s step-end infinite;
+    letter-spacing: 1px;
+    opacity: 0.95;
+}
+  
+@keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #2e7d32;
+    }
+}
+  
