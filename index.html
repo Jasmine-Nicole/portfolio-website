@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
     <header>
@@ -20,42 +21,220 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
+        <a href="#skills">Skills</a>
+        <a href="#links">Socials</a>
+        <a href="#contact">Contact Me</a>
     </nav>
     <section id="about" class="fade-in">
-        <h2>✨ About Me</h2>
-        <p>Hi! I’m a Computer Science student passionate about building impactful, user-friendly software. I'm currently diving deep into full-stack development 
-            through Codecademy's Full-Stack Engineer Career Path, while also earning certifications in CSS and Python via HackerRank. This summer, I’ll be 
-            continuing to grow my skills through CodePath’s Intro to Web Development course.</p>
-        <p>I love turning ideas into interactive, accessible web experiences, and I’m always looking for new challenges to level up my development skills. 
-            My goal is to land a software engineering internship where I can contribute to real-world projects, collaborate with talented teams, and keep growing 
-            as a developer.</p>
-        <p>When I’m not coding, you’ll probably find me playing with my dog, dancing, or catching up on the latest movies!</p>
+        <div class="section-content">
+            <h2>✨ About Me</h2>
+            <p>Hi! I’m a Computer Science student passionate about building impactful, user-friendly software. I'm currently diving deep into full-stack development 
+                through Codecademy's Full-Stack Engineer Career Path, while also earning certifications in CSS and Python via HackerRank. This summer, I’ll be 
+                continuing to grow my skills through CodePath’s Intro to Web Development course.</p>
+            <p>I love turning ideas into interactive, accessible web experiences, and I’m always looking for new challenges to level up my development skills. 
+                My goal is to land a software engineering internship where I can contribute to real-world projects, collaborate with talented teams, and keep growing 
+                as a developer.</p>
+            <p>When I’m not coding, you’ll probably find me playing with my dog, dancing, or catching up on the latest movies!</p>
+        </div>
     </section>
     <section id="projects" class="fade-in">
-        <h2>🚀 Projects</h2>
-        <ul>
-            <li><strong>Personal Portfolio Website:</strong> What you’re looking at now!</li>
-            <li><strong>Event Website:</strong> Single page website for podcast launch.</li>
-        </ul>
+        <div class="section-content">
+            <h2>🚀 Projects</h2>
+            <p>Here are some projects that I have been working on to expand my skillset.</p>
+            <ul class="arrow-list">
+                <li><strong>Personal Portfolio Website:</strong> What you’re looking at now!</li>
+                <li><strong>Event Website:</strong> Single page website for podcast launch.</li>
+                <li>
+                    <strong>CodeCademy Projects:</strong>
+                    <ul>
+                        <li>
+                            <strong>Web Development:</strong>
+                            <ul>
+                                <li>The Brown Bear Blog</li>
+                                <li>New York City Blog</li>
+                                <li>Morocco Blog</li>
+                                <li>Paint Store</li>
+                                <li>Olivia Woodruff Portfolio</li>
+                                <li>Wine Festival Schedule</li>
+                                <li>Fashion Blog</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Python:</strong>
+                            <ul>
+                                <li>Sal's Shipping</li>
+                                <li>Gradebook</li>
+                                <li>Magic 8-Ball</li>
+                                <li>Receipts for Lovely Loveseats</li>
+                                <li>Block Letters</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </section>
     <section id="resume" class="fade-in">
-        <h2>💼 Resume</h2>
-        <p><a href="Jasmine McBride Resume.docx" target="_blank">Download my resume</a></p>
+        <div class="section-content">
+            <h2>💼 My Resume</h2>
+            <p>You can download a copy of my resume <a href="Jasmine McBride Resume.docx" target="_blank" rel="noopener noreferrer">here</a>, and below is a list of my current and in progress certifications.</p>
+            <p>
+                <h3>Certifications</h3>
+                <ul>
+                    <li>
+                        <strong>Python:</strong><br>HackerRank<br>Issued March 2025
+                        <br>
+                        <a href="https://www.hackerrank.com/certificates/iframe/8261a310da1a" target="_blank" rel="noopener noreferrer">
+                            <em>View Certificate</em>
+                        </a>
+                    </li>
+                    <br>
+                    <li><strong>CSS:</strong><br>HackerRank<br>Issued March 2025
+                        <br>
+                        <a href="https://www.hackerrank.com/certificates/iframe/785e20319c46" target="_blank" rel="noopener noreferrer">
+                            <em>View Certificate</em>
+                        </a>
+                    </li>
+                </ul>
+                <h3>Programs</h3>
+                <ul>
+                    <li><strong>Full-Stack Engineer (Career Path):</strong><br>CodeCademy<br><em>In progress</em></em></li>
+                    <li><strong>Intro to Web Development:</strong><br>CodePath<br><em>Summer 2025</em></li>
+                    <li><strong>Intermediate Technical Interview Prep:</strong><br>CodePath<br><em>Summer 2025</em></li>
+                </ul>
+            </p>
+        </div>
     </section>
+    <section id="skills" class="fade-in">
+        <div class="section-content">
+            <h2>🛠 Skills</h2>
+            <h3>Languages</h3>
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fab fa-r-project"></i>
+                    <p>R</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-terminal"></i>
+                    <p>Terminal</p>
+                </div>
+            </div>
+            <h3>Tools & Platforms</h3>
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <i class="fa-solid fa-code"></i>
+                    <p>VS Code</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fab fa-git-alt" title="Git"></i>
+                    <p>Git</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fab fa-github"></i>
+                    <p>GitHub</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-brands fa-codepen"></i>
+                    <p>CodePen</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fab fa-figma"></i>
+                    <p>Figma</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-code"></i>
+                    <p>PyCharm</p>
+                </div>
+            </div>
+            <h3>Frameworks / Libraries</h3>
+            <div class="icon-grid coming-soon-bar">
+                <div class="loading-bar">
+                    <div class="fill"></div>
+                </div>
+                <p>Coming Soon!</p>             
+            </div>
+            <h3>In Progress / Learning</h3>
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <i class="fab fa-node-js" title="Node.js"></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fab fa-npm" title="npm"></i>
+                    <p>npm</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fab fa-react"></i>
+                    <p>React</p>
+                </div>
+            </div>
+        </div>
+    </section>         
     <section id="links" class="fade-in">
-        <h2>🤝 Let’s Connect</h2>
-        <ul>
-          <li>GitHub: <a href="https://github.com/Jasmine-Nicole" target="_blank">github.com/Jasmine-Nicole</a></li>
-          <li>LinkedIn: <a href="https://linkedin.com/in/jasmine-mcbride" target="_blank">linkedin.com/in/jasmine-mcbride</a></li>
-        </ul>
+        <div class="section-content">
+            <h2>🤝 Let’s Connect</h2>
+            <p>Want to connect? Find me on GitHub and LinkedIn!</p>
+            <div class="icon-grid">
+                <div class="icon-item">
+                  <a href="https://github.com/Jasmine-Nicole" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                    <p>GitHub</p>
+                  </a>
+                </div>
+                <div class="icon-item">
+                  <a href="https://linkedin.com/in/jasmine-mcbride" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                    <p>LinkedIn</p>
+                  </a>
+                </div>
+              </div>              
+        </div>
       </section>      
     <section id="contact" class="fade-in">
-        <h2>✉️ Email Me</h2>
-        <p><strong>Business Email:</strong> jasminenmcbride3@gmail.com | <strong>Student Email:</strong> jmcbride8@student.gsu.edu</p>
-    </section>
+        <div class="section-content">
+            <h2>✉️ Prefer Email? Contact me at:</h2>
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <a href="mailto:jasminenmcbride3@gmail.com" target="_blank" rel="noopener nonreferrer">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p><strong>Business:</strong> jasminenmcbride3@gmail.com</p>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <br>
+                    <p>|</p>
+                </div>
+                <div class="icon-item">
+                    <a href="mailto:jmcbride8@student.gsu.ed" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p><strong>Student:</strong> jmcbride8@student.gsu.edu</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </section>
     <footer>
         <p>© 2025 Jasmine McBride</p>
+        <p class="social-icons">
+            <a href="https://github.com/Jasmine-Nicole" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a> | 
+            <a href="https://linkedin.com/in/jasmine-mcbride" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </p>
     </footer>
     <script src="script.js" defer></script>
 </body>
