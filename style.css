@@ -216,4 +216,8 @@ footer .social-icons a:hover {
     color: var(--accent-color);
     text-decoration: none;
   }
+
+#copywright {
+    font-size: 0.8rem;
+}
   
