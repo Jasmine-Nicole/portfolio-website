@@ -1,6 +1,6 @@
-// JavaScript can go here in the future
 console.log("JavaScript is connected!");
 
+// ---- Fade-in on Scroll ---- //
 const faders = document.querySelectorAll('.fade-in');
 
 const appearOnScroll = new IntersectionObserver((entries, observer) => {
@@ -18,6 +18,7 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
+// ---- Typewriter Effect ---- //
 const words = [
   "Aspiring Software Engineer & Web Developer",
   "CodePath Student",
@@ -30,6 +31,7 @@ const words = [
   "Curious & Capable",
   "Building with Heart 💚"
 ];
+
 let i = 0;
 let j = 0;
 let currentWord = '';
@@ -38,19 +40,21 @@ const typewriter = document.getElementById("typewriter");
 
 function type() {
   currentWord = words[i];
-  typewriter.textContent = currentWord.substring(0, j);
+  if (typewriter) {
+    typewriter.textContent = currentWord.substring(0, j);
 
-  if (!isDeleting && j < currentWord.length) {
-    j++;
-    setTimeout(type, 120);
-  } else if (isDeleting && j > 0) {
-    j--;
-    setTimeout(type, 50);
-  } else {
-    isDeleting = !isDeleting;
-    if (!isDeleting) i = (i + 1) % words.length;
-    setTimeout(type, 1000);
+    if (!isDeleting && j < currentWord.length) {
+      j++;
+      setTimeout(type, 120);
+    } else if (isDeleting && j > 0) {
+      j--;
+      setTimeout(type, 50);
+    } else {
+      isDeleting = !isDeleting;
+      if (!isDeleting) i = (i + 1) % words.length;
+      setTimeout(type, 1000);
+    }
   }
 }
 
-type();
+if (typewriter) type();

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 :root {
     --primary-color: #2D2D2D;  /* Charcoal Gray */
     --secondary-color: #FFFFFF; /* White */
@@ -30,6 +34,12 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     color: #333;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--accent-color);
 }
 
 section {
@@ -71,11 +81,12 @@ section {
     align-items: center;
     font-size: 2rem;
     color: var(--primary-color);
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
   
 .icon-item:hover {
     color: var(--accent-color);
+    transform: translateY(-4px);
 }
   
 .icon-item p {
@@ -98,6 +109,76 @@ footer {
     width: 100%;
     z-index: 100;
 }
+
+footer .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: var(--accent-color)
+}
+
+#links, #contact {
+    text-align: center;
+}
+
+#links .icon-item {
+    justify-content: center; /* Center the icon and text */
+}
+
+#links .icon-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-decoration: none;
+    color: inherit; /* Inherit color from icon-item */
+    transition: color 0.3s ease;
+}
+
+#links .icon-item a:hover {
+    color: var(--accent-color); /* Same hover color as icons */
+}
+
+#links .icon-item i {
+    margin-bottom: 5px; /* Adds space between the icon and the text */
+}
+
+.coming-soon-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.loading-bar {
+    width: 120px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--highlight-color);
+    position: relative;
+}
+
+.loading-bar .fill {
+    height: 100%;
+    width: 0%;
+    background-color: var(--accent-color);
+    animation: loading-animation 10s infinite;
+}
+
+@keyframes loading-animation {
+    0% { width: 0%; }
+    99% { width: 100%; }
+    100% { width: 0%; }
+  }
 
 .fade-in {
     opacity: 0;
@@ -131,81 +212,6 @@ footer {
     }
 }
 
-footer .social-icons a {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: 0.9rem;
-}
-
-footer .social-icons a:hover {
-    color: var(--accent-color)
-}
-
-#links .icon-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Center the icon and text */
-    font-size: 2rem;
-    color: var(--primary-color);
-    transition: color 0.3s ease;
-}
-
-#links .icon-item a {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    text-decoration: none;
-    color: inherit; /* Inherit color from icon-item */
-}
-
-#links .icon-item a:hover {
-    color: var(--accent-color); /* Same hover color as icons */
-}
-
-/* Optional: You can add padding to adjust spacing */
-#links .icon-item i {
-    margin-bottom: 5px; /* Adds space between the icon and the text */
-}
-
-#links, #contact {
-    text-align: center;
-}
-
-.coming-soon-bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
-
-.loading-bar {
-    width: 120px;
-    height: 20px;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    background-color: #f1f1f1;
-}
-
-.loading-bar .fill {
-    height: 100%;
-    width: 0%;
-    background-color: var(--accent-color);
-    animation: loading-animation 10s infinite;
-}
-
-@keyframes loading-animation {
-    0% { width: 0%; }
-    99% { width: 100%; }
-    100% { width: 0%; }
-  }
-
   section a {
     color: var(--primary-color);
     text-decoration: underline;
@@ -220,4 +226,34 @@ footer .social-icons a:hover {
 #copywright {
     font-size: 0.8rem;
 }
-  
+
+details summary {
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+details ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ul.completed {
+    list-style: none;
+    padding-left: 2.0rem;
+}
+
+summary:hover {
+    color: var(--accent-color);
+}
+
+.head {
+    list-style: none;
+    margin-left: -20px;
+}
+
+@media (max-width: 600px) {
+    .icon-grid {
+      flex-direction: column;
+      gap: 20px;
+    }
+}
